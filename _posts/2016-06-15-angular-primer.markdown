@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Angular Primer"
+title:  "AngularJS 1.5.x Primer"
 date:   2016-03-15 11:36:00 +0100
 categories: personal
 ---

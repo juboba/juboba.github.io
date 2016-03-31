@@ -1,0 +1,10 @@
+# Site navigation links
+
+- title: All Posts
+  url: /posts/
+
+- title: About Me
+  url: /about/
+
+- title: Theme Setup
+  url: /theme-setup/

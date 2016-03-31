@@ -6,20 +6,36 @@ modified: 2016-03-31T20:53:07.573882-04:00
 comments: true
 image:
   feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+My name is Julio Borja Barra. I'm a chilean developer currently living in Cádiz,
+Spain.
 
-## Minimal Mistakes is all about:
+#### Javascript
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
+I've been developing applications using PHP frameworks for a while and for the
+last two years I've been dedicating my time to learn about the internals of Javascript
+and developing applications using AngularJS and REST APIs.
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+One of the things I like about Javascript is how the community influences the
+language. There are a lots of cases where solutions to local problems lead to
+great patterns that allow us to do fun stuff, like closures, promises, etc.
+
+#### Slackware Linux
+
+I've been a Slackware user since 2005 and I love it. The KISS principle is something
+that drives Slackware to be one the simplest linux distributions available.
+
+#### Open Source
+
+Besides the great importance of ethics in software development, I find great
+utility in sharing code. Since everything we create is by using something that was
+available, I think depriving people of using something or knowing how it was created
+just cuts the chain of development.
+
+I think it's a comforting feeling when you discover someone created something new 
+with something you made available.
+
+### The languages I like
+* Javascript (of course)
+* Rust

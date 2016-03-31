@@ -2,7 +2,7 @@
 layout: post
 title:  "AngularJS 1.5.x Primer"
 date:   2016-03-15 11:36:00 +0100
-categories: personal
+categories: javascript angular
 ---
 
 AngularJS is a Single Page Application Framework (SPA from now on).

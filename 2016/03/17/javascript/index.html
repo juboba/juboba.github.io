@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Without doubt this is the most misunderstood languages I know.Javascript is a multi-paradigm language. So you can write declarative So, let’s begin with some simple stuff. This approach will be using">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Javascript, the misunderstood language">
+<meta property="og:url" content="http://yoursite.com/2016/03/17/javascript/index.html">
+<meta property="og:site_name" content="juboba">
+<meta property="og:description" content="Without doubt this is the most misunderstood languages I know.Javascript is a multi-paradigm language. So you can write declarative So, let’s begin with some simple stuff. This approach will be using">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-24T15:53:58.698Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Javascript, the misunderstood language">
+<meta name="twitter:description" content="Without doubt this is the most misunderstood languages I know.Javascript is a multi-paradigm language. So you can write declarative So, let’s begin with some simple stuff. This approach will be using">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Javascript, the misunderstood language</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2018/11/24/hello-world/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2016/03/17/javascript/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2016/03/17/javascript/&text=Javascript, the misunderstood language"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2016/03/17/javascript/&title=Javascript, the misunderstood language"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2016/03/17/javascript/&is_video=false&description=Javascript, the misunderstood language"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Javascript, the misunderstood language&body=Check out this article: http://yoursite.com/2016/03/17/javascript/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2016/03/17/javascript/&title=Javascript, the misunderstood language"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2016/03/17/javascript/&title=Javascript, the misunderstood language"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2016/03/17/javascript/&title=Javascript, the misunderstood language"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2016/03/17/javascript/&title=Javascript, the misunderstood language"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2016/03/17/javascript/&name=Javascript, the misunderstood language&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#The-types"><span class="toc-number">1.</span> <span class="toc-text">The types</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Number"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">Number</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#String"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">String</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Boolean"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">Boolean</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Null"><span class="toc-number">1.0.0.4.</span> <span class="toc-text">Null</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Undefined"><span class="toc-number">1.0.0.5.</span> <span class="toc-text">Undefined</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Objects"><span class="toc-number">1.0.1.</span> <span class="toc-text">Objects</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Functions"><span class="toc-number">1.0.2.</span> <span class="toc-text">Functions</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Scope"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">Scope</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Globals"><span class="toc-number">1.0.2.1.1.</span> <span class="toc-text">Globals</span></a></li></ol></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#Prototypal-what"><span class="toc-number">2.</span> <span class="toc-text">Prototypal what?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Prototype-chain"><span class="toc-number">2.1.</span> <span class="toc-text">Prototype chain</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Expressions-and-Statements-in-Javascript"><span class="toc-number">3.</span> <span class="toc-text">Expressions and Statements in Javascript</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hoisting"><span class="toc-number">4.</span> <span class="toc-text">Hoisting</span></a></li>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Javascript, the misunderstood language
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <span itemprop="name">juboba</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2016-03-17T10:36:00.000Z" itemprop="datePublished">2016-03-17</time>
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/javascript/">javascript</a>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>Without doubt this is the most misunderstood languages I know.<br>Javascript is a multi-paradigm language. So you can write declarative</p>
+<p>So, let’s begin with some simple stuff. This approach will be using ES6 (still a<br>draft at the time of this writing) as the standard.</p>
+<h1 id="The-types"><a href="#The-types" class="headerlink" title="The types"></a>The types</h1><p>We have 6 primitive data types in javascript which are:</p>
+<ul>
+<li>Number</li>
+<li>String</li>
+<li>Boolean</li>
+<li>Null</li>
+<li>Undefined</li>
+<li>Symbol (new in ES6)</li>
+</ul>
+<h4 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h4><p>The <code>Number</code> type is the only one in Javascript (there’s no integers, floats, etc)<br>and it is has a double precision floating point format (binary64) (as specified by<br><a href="https://en.wikipedia.org/wiki/IEEE_floating_point" target="_blank" rel="noopener">IEEE 754</a>). This means you can<br>‘safely’ use numbers between -2<sup>53</sup>-1 and 2<sup>53</sup>-1.<br><code>Number</code> has three symbolic values:</p>
+<ul>
+<li>NaN</li>
+<li>-Infinity</li>
+<li>+Infinity</li>
+</ul>
+<p>The only number with two representations is <code>-0</code> and <code>+0</code>. With <code>0</code> being the same<br>as <code>+0</code>. In practice, this has almost no consequences (you’ll notice if you divide<br>by -0 or by +0 thoughm, <em>try it out!</em>)</p>
+<h4 id="String"><a href="#String" class="headerlink" title="String"></a>String</h4><p>The <code>String</code> type is used to represent textual data. As in other languages, a string<br>is an ‘array’ of integers and some array-like operations can be used on strings:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="string">"my string"</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(a[<span class="number">1</span>] === <span class="string">'y'</span>); <span class="comment">// This is true</span></span><br></pre></td></tr></table></figure>
+<h4 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a>Boolean</h4><p><code>Boolean</code>s represent a logical type which can have either of two values: <code>true</code> and <code>false</code>.<br>In Javascript boolean values are always lower-cased.</p>
+<h4 id="Null"><a href="#Null" class="headerlink" title="Null"></a>Null</h4><p>The only value that the <code>Null</code> type has is: <code>null</code>.</p>
+<h4 id="Undefined"><a href="#Undefined" class="headerlink" title="Undefined"></a>Undefined</h4><p>Any variable in Javascript that has not been initialized with a value, has the value of <code>undefined</code>.<br>Also, any non-existing property of an object has the value <code>undefined</code> when tested:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.myNonExistingProperty) <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+<p>And any function with no return value returns <code>undefined</code>.</p>
+<p><code>undefined</code> is a property of the global object. You can check this out by doing (in the browser):</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.hasOwnProperty(<span class="string">'undefined'</span>); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+<p>The initial value of <code>undefined</code> is the primitive value <code>undefined</code>.</p>
+<h3 id="Objects"><a href="#Objects" class="headerlink" title="Objects"></a>Objects</h3><p>In Javascript, an <code>Object</code> is a collection of properties that can be referenced by an <em>identifier</em>.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myObject = &#123;</span><br><span class="line">  color: <span class="string">'red'</span>,</span><br><span class="line">  getColor: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.color;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>Objects can be created in several ways:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> object = <span class="keyword">new</span> <span class="built_in">Object</span>;</span><br><span class="line"><span class="keyword">var</span> object = &#123;&#125;;</span><br><span class="line"><span class="keyword">var</span> object = <span class="built_in">Object</span>.create(<span class="built_in">Object</span>);</span><br></pre></td></tr></table></figure>
+<p>These are similar but not exactly the same (more on this later).</p>
+<!--
+* When we use `Object.create()`, the object passed as
+an argument to the function forms the prototype for the new object (more on prototypes in a second).
+* When we use the `new` operator, the prototype of the operand (in this case `Object`) is used as the
+prototype of the object created.
+* When we use the Object literal [TODO]
+-->
+<h3 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h3><p>Functions are a first class citizen in Javascript. This means that functions can be assigned to variables,<br>passed as parameters for other functions or even returned by functions. This doesn’t end here, as all of<br>these are perfectly legal in Javascript:</p>
+<p>Assign a function to a variable:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;;</span><br></pre></td></tr></table></figure>
+<p>Pass a function as an argument to another function:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params">fn</span>) </span>&#123;</span><br><span class="line">  fn();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> result = myFunction(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"Hello!"</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(result) <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+<p>Return a function from a function:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params">fn</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> fn;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> result = myFunction(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'hello'</span>;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(result) <span class="comment">// function</span></span><br><span class="line"><span class="built_in">console</span>.log(result()) <span class="comment">// 'hello'</span></span><br></pre></td></tr></table></figure>
+<p>You can even have arrays of functions:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myArray = [<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;<span class="keyword">return</span> <span class="string">'hello'</span>&#125;, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;<span class="keyword">return</span> <span class="string">'goodbye'</span>&#125;];</span><br><span class="line"></span><br><span class="line">myArray[<span class="number">0</span>]() <span class="comment">// 'hello'</span></span><br><span class="line">myArray[<span class="number">1</span>]() <span class="comment">// 'goodbye'</span></span><br></pre></td></tr></table></figure>
+<p>So, functions are declared using the keyword <code>function</code>:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myNewFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="string">``</span><span class="string">` </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">And as I said before, not returning anything actually returns `</span><span class="literal">undefined</span><span class="string">`:</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>javascript</span><br><span class="line"><span class="built_in">console</span>.log(myNewFunction()); <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+<p>All functions are bound to objects, so if you don’t specify an object, your<br>functions will be bound to the global object (<code>global</code> in Node, <code>window</code> in<br>the browser).</p>
+<h4 id="Scope"><a href="#Scope" class="headerlink" title="Scope"></a>Scope</h4><p>Every function (declared with the <code>function</code> keyword) defines a scope. So every<br>variable declared inside will only <em>live</em> inside the context of that function:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addOne</span>(<span class="params">number</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> one = <span class="number">1</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(one); <span class="comment">// 1</span></span><br><span class="line">  <span class="keyword">return</span> number + one;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(one) <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+<p>Javascript uses something called <a href="http://en.wikipedia.org/wiki/Lexical_scoping#Lexical_scoping" target="_blank" rel="noopener">lexical scope</a><br>to lookup variable declarations. This basically means that every variable is<br>available inside the function where it is declared but also inside the functions<br>declared inside the parent function.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">parent</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> parent_var = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">child</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(parent_var); <span class="comment">// 10</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>But! If the variable is redefined inside the function then it will be <em>shadowed</em><br>by this new definition:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">parent</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="keyword">var</span> variable = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">child</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> variable = <span class="number">5</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(variable) <span class="comment">// 5</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(variable) <span class="comment">// 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="Globals"><a href="#Globals" class="headerlink" title="Globals"></a>Globals</h5><p>If you don’t <em>declare</em> a variable and just start using it there are two posible<br>outcomes:</p>
+<ul>
+<li>The variable is being read. This will throw a <code>ReferenceError</code> saying the variable<br>is not defined.</li>
+<li>The variable is being written. This will define a <em>global property</em> with that name.</li>
+</ul>
+<p>The last case can lead to confusion and contamination of the global scope.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  some = <span class="string">'my name'</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(some); <span class="comment">// 'my name' as expected</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(some) <span class="comment">// 'my name'</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.some) <span class="comment">// 'my name' (in browser)</span></span><br><span class="line"><span class="built_in">console</span>.log(global.some) <span class="comment">// 'my name' (in Node)</span></span><br></pre></td></tr></table></figure>
+<p>You should <strong>always</strong> declare variables (even if you don’t initialize them) using:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myVariable;</span><br></pre></td></tr></table></figure>
+<h1 id="Prototypal-what"><a href="#Prototypal-what" class="headerlink" title="Prototypal what?"></a>Prototypal what?</h1><p>Javascript is known by its prototypal inheritance. This is very different from other<br>languages.<br>If you come from PHP (or Java, or other Object Oriented Language) you may be used to<br>things like:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__construct</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"Person created!"</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$john = <span class="keyword">new</span> Person(); <span class="comment">// Person created!</span></span><br></pre></td></tr></table></figure>
+<p>In this case the Person <code>class</code> specifies a <em>pattern</em> for objects to be created.<br>So every object in PHP is an <strong>instance</strong> of a <strong>class</strong>. But the Person class<br>itself is not an object, you treat the class very different from an instanced<br>object.</p>
+<p>In Javascript there are no real classes (even though in ES6 we have the <code>class</code><br>keyword). What we do have is <code>prototypes</code>.</p>
+<p>So how does it work?</p>
+<h2 id="Prototype-chain"><a href="#Prototype-chain" class="headerlink" title="Prototype chain"></a>Prototype chain</h2><p>Every object has a prototype. You can think of the objects in Javascript as a<br>linked list in that every object has a <em>reference</em> to it’s prototype. Every time<br>you ask for a property (this includes functions) from an object, the interpreter<br>will look for that property in the object, but if it doesn’t find it there it will<br>look for the property in the object’s prototype. If it’s still not there, then the<br>prototype of the prototype will be searched for the property.<br>This process will occur until</p>
+<h1 id="Expressions-and-Statements-in-Javascript"><a href="#Expressions-and-Statements-in-Javascript" class="headerlink" title="Expressions and Statements in Javascript"></a>Expressions and Statements in Javascript</h1><!-- Here talk about declaration statements vs expression statements and the difference
+between returning a value and not. -->
+<h1 id="Hoisting"><a href="#Hoisting" class="headerlink" title="Hoisting"></a>Hoisting</h1><p>Hoisting means that the interpreter will take the variable/function declaration and<br>‘move’ it to the top of the block.<br>Knowing this will help you avoid many <code>ReferenceError</code> problems.</p>
+<p>Sometimes you will find code like the following:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sayHello(); <span class="comment">// hello!</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHello</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'hello!'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>The interpreter converts that code into this:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHello</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'helllo!'</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sayHello();</span><br></pre></td></tr></table></figure>
+<p>With variables something similar (yet not the same) happens:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(myVariable); <span class="comment">// undefined</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> myVariable = <span class="string">'my text'</span>;</span><br></pre></td></tr></table></figure>
+<p>which is not the same as simply not defining the variable:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(myVariable); <span class="comment">// ReferenceError</span></span><br></pre></td></tr></table></figure>
+<p>The reason is that the interpreter actually converts that code into this:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myVariable;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(myVariable); <span class="comment">// undefined</span></span><br><span class="line"></span><br><span class="line">myVariable = <span class="string">'my text'</span>;</span><br></pre></td></tr></table></figure>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#The-types"><span class="toc-number">1.</span> <span class="toc-text">The types</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Number"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">Number</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#String"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">String</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Boolean"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">Boolean</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Null"><span class="toc-number">1.0.0.4.</span> <span class="toc-text">Null</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Undefined"><span class="toc-number">1.0.0.5.</span> <span class="toc-text">Undefined</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Objects"><span class="toc-number">1.0.1.</span> <span class="toc-text">Objects</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Functions"><span class="toc-number">1.0.2.</span> <span class="toc-text">Functions</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Scope"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">Scope</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Globals"><span class="toc-number">1.0.2.1.1.</span> <span class="toc-text">Globals</span></a></li></ol></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#Prototypal-what"><span class="toc-number">2.</span> <span class="toc-text">Prototypal what?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Prototype-chain"><span class="toc-number">2.1.</span> <span class="toc-text">Prototype chain</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Expressions-and-Statements-in-Javascript"><span class="toc-number">3.</span> <span class="toc-text">Expressions and Statements in Javascript</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hoisting"><span class="toc-number">4.</span> <span class="toc-text">Hoisting</span></a></li>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2016/03/17/javascript/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2016/03/17/javascript/&text=Javascript, the misunderstood language"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2016/03/17/javascript/&title=Javascript, the misunderstood language"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2016/03/17/javascript/&is_video=false&description=Javascript, the misunderstood language"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Javascript, the misunderstood language&body=Check out this article: http://yoursite.com/2016/03/17/javascript/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2016/03/17/javascript/&title=Javascript, the misunderstood language"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2016/03/17/javascript/&title=Javascript, the misunderstood language"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2016/03/17/javascript/&title=Javascript, the misunderstood language"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2016/03/17/javascript/&title=Javascript, the misunderstood language"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2016/03/17/javascript/&name=Javascript, the misunderstood language&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 Julio Borja Barra
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+

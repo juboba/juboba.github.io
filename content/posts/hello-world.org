@@ -1,0 +1,98 @@
+---
+title: "Abstractions in Software development"
+date: 2020-11-25T23:37:58+01:00
+draft: false
+---
+
+* Foreword
+When put to the task of solving any kind of problem, most of the time, we tend
+to drive our attention directly to think about what problem we are going to
+solve and how to solve it. We seldom consider the "what kind" of problem we're
+trying to solve. You can think about life as the collection of decisions that
+you've made until just the moment before starting to read this. Of course,
+reading this is yet another decission
+
+#+BEGIN_SRC js
+const getTitle = person => {
+    let gender
+
+    switch (person.gender) {
+    case 'male':
+        gender = 'Mr.'
+        break;
+    case 'female':
+        gender = 'Mrs'
+        break;
+    default:
+        gender = '_'
+    }
+
+    return gender
+}
+
+return getTitle({ gender: 'male' })
+#+END_SRC
+
+#+RESULTS:
+: Mr\.
+
+#+BEGIN_SRC js
+const cond = pairs => {
+    return x => {
+        let result
+
+        for (let i=0; i < pairs.length; i++) {
+            if (pairs[i][0](x)) {
+                return pairs[i][1](x)
+            }
+        }
+
+        throw new Error('cond :: I couldn\'t find a base case.')
+    }
+}
+
+const testFn = cond([
+    [x => x > 5, x => `${x} is greater than five!`], // Pair(a, b)
+    [x => x > 1, x => `${x} is greater than one!`],
+    [x => true, x => `Nothing special about ${x}`]
+])
+
+const pipeB = (fnA, fnB) => (...x) => fnB(fnA(...x))
+const pipe = (...fns) => fns.reduce(pipeB)
+const prop = propName => object => object ? object[propName] : undefined
+const propEq = (propName, expectedValue) => object => prop(propName)(object) === expectedValue
+const True = () => true
+
+// getTitle :: Object{ gender } -> String
+const getTitle = pipe(
+    prop('gender'),
+    cond([
+        [gender => gender === 'male', () => 'Mr.'],
+        [gender => gender === 'female', () => '"Mrs."'],
+        [True, () => '_'],
+    ])
+)
+
+return getTitle({ gender: 'female' })
+#+END_SRC
+
+#+RESULTS:
+: Mrs\.
+
+ #+BEGIN_SRC js :format code
+const ifElse = (predicate, thenFn, elseFn) => x => predicate(x) ? thenFn(x) : elseFn(x)
+
+console.log(
+    ifElse(x => x > 5, x => `${x} is greater than 5`, x => `${x} is not greater than 5`)(8)
+)
+#+END_SRC
+
+#+RESULTS:
+: 8 is greater than 5
+: undefined
+
+
+* The high's vs the low's
+
+- ...
+- Talk about Emacs

@@ -1,0 +1,15 @@
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "themes/notepadium"]
+	path = themes/notepadium
+	url = https://github.com/cntrump/hugo-notepadium
+[submodule "themes/minimo"]
+	path = themes/minimo
+	url = https://github.com/MunifTanjim/minimo
+[submodule "themes/hugo386"]
+	path = themes/hugo386
+	url = https://gitlab.com/maxlefou/hugo.386
+[submodule "themes/loveIt"]
+	path = themes/loveIt
+	url = https://github.com/dillonzq/LoveIt
